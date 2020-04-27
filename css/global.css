@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);
+
+  /* Social media colors*/
+  --facebook: hsl(195, 100%, 50%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram-one: hsl(37, 97%, 70%);
+  --instagram-two: hsl(329, 70%, 58%);
+  --youtube: hsl(348, 97%, 39%);
+
+  /* Toggle button colors*/
+  --toggle: hsl(230, 22%, 74%);
+  --toggleDark: hsl(210, 78%, 56%);
+  --toggleDarkTwo: hsl(146, 68%, 55%);
+
+  /* Light theme */
+  --gray-text: hsl(228, 12%, 44%);
+  --headerBackground: hsl(225, 100%, 98%);
+  --card-background: hsl(227, 47%, 96%);
+  --card-background-hover: hsl(227, 47%, 90%);
+
+  /* Dark theme */
+
+  --dark-background: hsl(230, 17%, 14%); /* BG*/
+  --VeryDarkBlueBG: hsl(232, 19%, 15%);
+  --dark-card-background: hsl(228, 28%, 20%);
+  --desaturated-text: hsl(228, 34%, 66%);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 700;
+  color: var(--gray-text);
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/*header*/
+header {
+  padding: 18px;
+  background-color: var(--headerBackground);
+}
+
+hr {
+  margin-top: 20px;
+}
+
+.toggle-button {
+  margin: 20px 0 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.switch {
+  position: relative;
+  display: block;
+  width: 70px;
+  height: 35px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: var(--toggle);
+  transition: 0.8s;
+}
+
+.round {
+  border-radius: 35px;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 35px;
+  height: 35px;
+  transition: 0.5s;
+}
+
+.switch input:checked + .slider {
+  background: linear-gradient(var(--toggleDark), var(--toggleDarkTwo));
+}
+
+.switch input:checked + .slider::before {
+  left: 40px;
+}
+
+/* social cards*/
+.followers-container {
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.followers {
+  background-color: var(--card-background);
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.followers:hover {
+  background-color: var(--card-background-hover);
+}
+
+.followers .user {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.followers .user .username {
+  margin: 0 5px;
+  color: var(--gray-text);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.followers h2 {
+  font-size: 45px;
+}
+
+.followers img {
+  margin-right: 5px;
+}
+
+.followers .title {
+  color: gray;
+  margin: 5px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.facebook {
+  border-top: 5px solid var(--facebook);
+}
+.twitter {
+  border-top: 5px solid var(--twitter);
+}
+.instagram {
+  border-top: 5px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    var(--instagram-one),
+    var(--instagram-two)
+  );
+  border-image-slice: 1;
+  border-radius: 8px;
+}
+.youtube {
+  border-top: 5px solid var(--youtube);
+}
+
+.today {
+  color: var(--lime-green);
+  font-weight: 700;
+  font-size: 13px;
+  margin-top: 10px;
+
+  display: flex;
+  align-items: center;
+}
+
+.negative {
+  color: var(--bright-red);
+}
+
+/* Overview Cards */
+
+.overview h2 {
+  margin: 20px 0;
+  color: var(--gray-text);
+}
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+}
+
+.overview-card {
+  background-color: var(--card-background);
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.overview-card:hover {
+  background-color: var(--card-background-hover);
+}
+
+.overview-card .overview-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overview-card h2 {
+  color: #000;
+}
+
+.overview .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer {
+  font-size: 0.8rem;
+  color: gray;
+}
+footer a {
+  text-decoration: none;
+}
