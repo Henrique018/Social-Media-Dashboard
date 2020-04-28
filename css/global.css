@@ -55,6 +55,8 @@ h2 {
 /*header*/
 header {
   padding: 18px;
+  height: 30vh;
+  width: 100%;
   background-color: var(--headerBackground);
 }
 
@@ -62,7 +64,7 @@ hr {
   margin-top: 20px;
 }
 
-.toggle-button {
+.toggle-container {
   margin: 20px 0 5px 0;
   display: flex;
   justify-content: space-between;
@@ -202,12 +204,12 @@ hr {
 
 /* Overview Cards */
 
-.overview h2 {
+.overview-container h2 {
   margin: 20px 0;
   color: var(--gray-text);
 }
 
-.overview {
+.overview-container {
   display: flex;
   flex-direction: column;
   padding: 18px;
@@ -233,7 +235,7 @@ hr {
   color: #000;
 }
 
-.overview .details {
+.overview-card .details {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -245,4 +247,49 @@ footer {
 }
 footer a {
   text-decoration: none;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  hr {
+    display: none;
+  }
+
+  header {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .toggle-container {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .toggle-container div {
+    margin: 0 15px;
+  }
+
+  .followers-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .overview-container .alignment {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
 }

@@ -14,11 +14,13 @@
   </head>
   <body>
     <header>
-      <h1>Social Media Dashboard</h1>
-      <strong>Total Followers: 23,004 </strong>
+      <div>
+        <h1>Social Media Dashboard</h1>
+        <strong>Total Followers: 23,004 </strong>
 
-      <hr />
-      <div class="toggle-button">
+        <hr />
+      </div>
+      <div class="toggle-container">
         <div>
           <strong>Dark Mode</strong>
         </div>
@@ -84,107 +86,108 @@
         </section>
       </section>
 
-      <section class="overview">
+      <section class="overview-container">
         <h2>Overview - Today</h2>
+        <div class="alignment">
+          <section class="overview-card">
+            <div class="overview-title">
+              <strong>Page Views</strong>
+              <img src="./images/icon-facebook.svg" alt="Facebook" />
+            </div>
+            <div class="details">
+              <h2>87</h2>
+              <span class="today">3%</span>
+            </div>
+          </section>
 
-        <section class="overview-card">
-          <div class="overview-title">
-            <strong>Page Views</strong>
-            <img src="./images/icon-facebook.svg" alt="Facebook" />
-          </div>
-          <div class="details">
-            <h2>87</h2>
-            <span class="today">3%</span>
-          </div>
-        </section>
+          <section class="overview-card">
+            <div class="overview-title">
+              <strong>Likes</strong>
+              <img src="./images/icon-facebook.svg" alt="Facebook" />
+            </div>
+            <div class="details">
+              <h2>52</h2>
+              <span class="today negative">2%</span>
+            </div>
+          </section>
 
-        <section class="overview-card">
-          <div class="overview-title">
-            <strong>Likes</strong>
-            <img src="./images/icon-facebook.svg" alt="Facebook" />
-          </div>
-          <div class="details">
-            <h2>52</h2>
-            <span class="today negative">2%</span>
-          </div>
-        </section>
+          <section class="overview-card">
+            <div class="overview-title">
+              <strong>Likes</strong>
+              <img src="./images/icon-instagram.svg" alt="Instagram" />
+            </div>
+            <div class="details">
+              <h2>5462</h2>
+              <span class="today">2257%</span>
+            </div>
+          </section>
 
-        <section class="overview-card">
-          <div class="overview-title">
-            <strong>Likes</strong>
-            <img src="./images/icon-instagram.svg" alt="Instagram" />
-          </div>
-          <div class="details">
-            <h2>5462</h2>
-            <span class="today">2257%</span>
-          </div>
-        </section>
+          <section class="overview-card">
+            <div class="overview-title">
+              <strong>Profile Views</strong>
+              <img src="./images/icon-instagram.svg" alt="Instagram" />
+            </div>
+            <div class="details">
+              <h2>52K</h2>
+              <span class="today">1375%</span>
+            </div>
+          </section>
 
-        <section class="overview-card">
-          <div class="overview-title">
-            <strong>Profile Views</strong>
-            <img src="./images/icon-instagram.svg" alt="Instagram" />
-          </div>
-          <div class="details">
-            <h2>52K</h2>
-            <span class="today">1375%</span>
-          </div>
-        </section>
+          <section class="overview-card">
+            <div class="overview-title">
+              <strong>Retweets</strong>
+              <img src="./images/icon-twitter.svg" alt="Twitter" />
+            </div>
+            <div class="details">
+                <h2>117</h2>
+                <span class="today">303%</span>
+            </div>
+          </section>
 
-        <section class="overview-card">
-          <div class="overview-title">
-            <strong>Retweets</strong>
-            <img src="./images/icon-twitter.svg" alt="Twitter" />
-          </div>
-          <div class="details">
-            <h2>117</h2>
-            <span class="today">303%</span>
-          </div>
-        </section>
+          <section class="overview-card">
+            <div class="overview-title">
+              <strong>Likes</strong>
+              <img src="./images/icon-twitter.svg" alt="Twitter" />
+            </div>
+            <div class="details">
+              <h2>507</h2>
+              <span class="today">503%</span>
+            </div>
+          </section>
 
-        <section class="overview-card">
-          <div class="overview-title">
-            <strong>Likes</strong>
-            <img src="./images/icon-twitter.svg" alt="Twitter" />
-          </div>
-          <div class="details">
-            <h2>507</h2>
-            <span class="today">503%</span>
-          </div>
-        </section>
+          <section class="overview-card">
+            <div class="overview-title">
+              <strong>Likes</strong>
+              <img src="./images/icon-youtube.svg" alt="Youtube" />
+            </div>
+            <div class="details">
+              <h2>858</h2>
+              <span class="today negative">19%</span>
+            </div>
+          </section>
 
-        <section class="overview-card">
-          <div class="overview-title">
-            <strong>Likes</strong>
-            <img src="./images/icon-youtube.svg" alt="Youtube" />
-          </div>
-          <div class="details">
-            <h2>858</h2>
-            <span class="today negative">19%</span>
-          </div>
-        </section>
-
-        <section class="overview-card">
-          <div class="overview-title">
-            <strong>Total Views</strong>
-            <img src="./images/icon-youtube.svg" alt="Youtube" />
-          </div>
-          <div class="details">
-            <h2>1K</h2>
-            <span class="today negative">7%</span>
-          </div>
-        </section>
+          <section class="overview-card">
+            <div class="overview-title">
+              <strong>Total Views</strong>
+              <img src="./images/icon-youtube.svg" alt="Youtube" />
+            </div>
+            <div class="details">
+              <h2>1K</h2>
+              <span class="today negative">7%</span>
+            </div>
+          </section>
+        </div>
       </section>
-    </main>
 
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="https://github.com/henrique018" target="_blank"
-        >Henrique Oliveira</a
-      >.
-    </footer>
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/henrique018" target="_blank"
+          >Henrique Oliveira</a
+        >.
+      </footer>
+    </main>
   </body>
 </html>
