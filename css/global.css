@@ -55,8 +55,16 @@ h2 {
 /*header*/
 header {
   padding: 18px;
-  height: 30vh;
+}
+
+header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: -1;
+  height: 245px;
   background-color: var(--headerBackground);
 }
 
@@ -261,10 +269,10 @@ footer a {
   }
 
   header {
-    height: 20vh;
+    min-height: 15vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .container {
