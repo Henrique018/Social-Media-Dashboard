@@ -72,6 +72,7 @@ hr {
   margin-top: 20px;
 }
 
+/* Toggle button */
 .toggle-container {
   margin: 20px 0 5px 0;
   display: flex;
@@ -81,12 +82,20 @@ hr {
 .switch {
   position: relative;
   display: block;
-  width: 70px;
-  height: 35px;
+  width: 55px;
+  height: 25px;
 }
 
 .switch input {
   display: none;
+}
+
+.switch input:checked + .slider {
+  background: linear-gradient(var(--toggleDark), var(--toggleDarkTwo));
+}
+
+.switch input:checked + .slider::before {
+  left: 32px;
 }
 
 .slider {
@@ -100,28 +109,20 @@ hr {
   transition: 0.8s;
 }
 
-.round {
-  border-radius: 35px;
-}
-
 .slider::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 4px;
+  left: 4px;
   background-color: #fff;
-  border-radius: 30px;
-  width: 35px;
-  height: 35px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
   transition: 0.5s;
 }
 
-.switch input:checked + .slider {
-  background: linear-gradient(var(--toggleDark), var(--toggleDarkTwo));
-}
-
-.switch input:checked + .slider::before {
-  left: 40px;
+.round {
+  border-radius: 35px;
 }
 
 /* social cards*/
@@ -292,12 +293,12 @@ footer a {
   .followers-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 18px;
   }
 
   .overview-container .alignment {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 18px;
   }
 }
