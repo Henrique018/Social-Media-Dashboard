@@ -9,5 +9,5 @@
 - Theme switcher feature
 
 Todos : 
- [x] Responsive design with flexbox and Grid Layout
- [] 
+ - [x] Responsive design with flexbox and Grid Layout
+ - [ ] Make the toggle button work
