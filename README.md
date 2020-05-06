@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Social media dashboard with theme switcher
+=======
+# Social media dashboard with theme switcher 
+>>>>>>> 446fa8616db55bf7e8728d107a2f26d47fbb9006
 
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
 
