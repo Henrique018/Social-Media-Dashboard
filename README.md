@@ -1,4 +1,4 @@
-# Social media dashboard with theme switcher 
+# Social media dashboard with theme switcher
 
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
 
@@ -8,6 +8,7 @@
 - Made with pure HTML, CSS and JS
 - Theme switcher feature
 
-Todos : 
-  - [x] Responsive design with flexbox and Grid Layout
-  - [x] Make the toggle button work 
+Todos :
+
+- [x] Responsive design with flexbox and Grid Layout
+- [x] Make the toggle button work
