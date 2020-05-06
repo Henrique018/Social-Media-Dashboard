@@ -1,7 +1,6 @@
 
 # Social media dashboard with theme switcher
 
-# Social media dashboard with theme switcher 
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
 
 ## A Code challenge made by [Frontend Mentor](https://www.frontendmentor.io/) 🚀
